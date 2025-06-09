@@ -10,7 +10,7 @@ public class Hook {
     private String browserName= "chrome";
 
     @Before(order= 1)
-    public void launchBrowser(String browserName){
+    public void launchBrowser(){
         initDriver=new InitDriver();
         initDriver.selectBrowser(browserName);
     }
