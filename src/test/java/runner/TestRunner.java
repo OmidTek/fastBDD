@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features=  "classpath=features",//or "./src/test/resources/features",
+       // or features="./src/test/resources/features",
+        features= "classpath:features",
         glue={"hookpackage", "stepdefinition"},
         tags="@test",
         publish=false,
